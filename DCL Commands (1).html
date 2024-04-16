@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>DCL Commands</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+    overflow: hidden; /* Hide overflow to prevent scrollbars */
+    position: relative; /* Relative positioning for floating elements */
+  }
+  .header {
+    text-align: center;
+    padding: 20px 0;
+  }
+  .header h1 {
+    font-size: 72px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    animation: blink 1s infinite alternate;
+  }
+  @keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.5;
+    }
+  }
+  .main-section {
+    text-align: center;
+    padding: 50px 0;
+    max-height: calc(100vh - 200px); /* Adjust as needed */
+    overflow-y: auto; /* Enable vertical scrolling */
+  }
+  .main-section h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    animation: slideInDown 1s ease-out;
+  }
+  .question {
+    text-align: left;
+    padding: 20px;
+    margin-bottom: 30px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+  }
+  .question h3 {
+    margin-bottom: 10px;
+ 
+  }
+  .footer {
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  .footer p {
+    font-size: 14px;
+    color: #a0a0a0;
+    margin-bottom: 5px;
+  }
+</style>
+</head>
+<body>
+
+  <div class="main-section">
+    <h2>DCL Commands</h2>
+
+      <p>DCL (Data Control Language)</p>
+DCL includes commands such as GRANT and REVOKE which mainly deal with the rights, permissions, and other controls of the database system. 
+</p><p>
+List of  DCL commands: 
+</p><p>
+GRANT: This command gives users access privileges to the database.
+</p><p>
+Syntax:
+</p><p>
+GRANT SELECT, UPDATE ON MY_TABLE TO SOME_USER, ANOTHER_USER;  
+</p><p>
+REVOKE: This command withdraws the user�s access privileges given by using the GRANT command.
+</p><p>
+Syntax:
+</p><p>
+REVOKE SELECT, UPDATE ON MY_TABLE FROM USER1, USER2;  
+</p><p>
+<p>TCL (Transaction Control Language)</p>
+Transactions group a set of tasks into a single execution unit. Each transaction begins with a specific task and ends when all the tasks in the group are successfully completed. If any of the tasks fail, the transaction fails. Therefore, a transaction has only two results: success or failure. You can explore more about transactions here. Hence, the following TCL commands are used to control the execution of a transaction: 
+</p><p>
+BEGIN: Opens a Transaction.
+</p><p>
+COMMIT: Commits a Transaction.
+</p><p>
+Syntax:
+</p><p>
+COMMIT;  
+</p><p>
+ROLLBACK: Rollbacks a transaction in case of any error occurs.
+</p><p>
+Syntax:
+</p><p>
+ROLLBACK;  
+</p><p>
+SAVEPOINT: Sets a save point within a transaction.
+</p><p>
+Syntax:
+</p><p>
+SAVEPOINT SAVEPOINT_NAME;  
+</p><p>
+Conclusion
+If you are aware of SQL, then SQL commands are the foundation of an effective database management system. Whether you are manipulating data, or managing data, SQL provides all sets of tools. Now, with this detailed guide, we hope you have gained a deep understanding of SQL commands, their categories, and syntax with examples.
+
+.</p>
+    </div>
+  </div>
+</body>
+</html>

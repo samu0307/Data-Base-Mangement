@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>DDL Commands</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+    overflow: hidden; /* Hide overflow to prevent scrollbars */
+    position: relative; /* Relative positioning for floating elements */
+  }
+  .header {
+    text-align: center;
+    padding: 20px 0;
+  }
+  .header h1 {
+    font-size: 72px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    animation: blink 1s infinite alternate;
+  }
+  @keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.5;
+    }
+  }
+  .main-section {
+    text-align: center;
+    padding: 50px 0;
+    max-height: calc(100vh - 200px); /* Adjust as needed */
+    overflow-y: auto; /* Enable vertical scrolling */
+  }
+  .main-section h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    animation: slideInDown 1s ease-out;
+  }
+  .question {
+    text-align: left;
+    padding: 20px;
+    margin-bottom: 30px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+  }
+  .question h3 {
+    margin-bottom: 10px;
+ 
+  }
+  .footer {
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  .footer p {
+    font-size: 14px;
+    color: #a0a0a0;
+    margin-bottom: 5px;
+  }
+</style>
+</head>
+<body>
+
+  <div class="main-section">
+    <h2>DDL Commands</h2>
+    <div class="question">
+      <h4>CREATE</h4>
+      <p><strong>Question:</strong> Create a table named `Students` with columns for `student_id`, `first_name`, `last_name`, and `date_of_birth`.</p>
+      <p><strong>Solution:</strong></p>
+      <pre>CREATE TABLE Students (
+    student_id INT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    date_of_birth DATE
+);</pre>
+      <p>CREATE
+Question: Create a table named `Students` with columns for `student_id`, `first_name`, `last_name`, and `date_of_birth`.
+
+Solution:
+
+CREATE TABLE Students (
+    student_id INT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    date_of_birth DATE
+);
+DDL (Data Definition Language) DDL or Data Definition Language actually consists of the SQL commands that can be used to define the database schema. It simply deals with descriptions of the database schema and is used to create and modify the structure of database objects in the database. DDL is a set of SQL commands used to create, modify, and delete database structures but not data. These commands are normally not used by a general user, who should be accessing the database via an application. List of DDL commands: 
+<p>CREATE: This command is used to create the database or its objects (like table, index, function, views, store procedure, and triggers).</p> 
+<p>DROP: This command is used to delete objects from the database.</p> 
+<p>ALTER: This is used to alter the structure of the database.</p> 
+<p>TRUNCATE: This is used to remove all records from a table, including all spaces allocated for the records are removed.</p>  
+<p>COMMENT: This is used to add comments to the data dictionary.</p> 
+<p>RENAME: This is used to rename an object existing in the database.</p>
+</p>
+    </div>
+  </div>
+</body>
+</html>
